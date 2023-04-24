@@ -1,0 +1,44 @@
+package Inheritance_baitap;
+
+import java.util.Scanner;
+
+public class GiaoDichDat extends GiaoDichNhaDat {
+	private String loaiDat;
+	private GiaoDichNhaDat nha;
+	Scanner scanner = new Scanner(System.in);
+	
+	public void nhapGDDat() {
+		super.nhap();
+		System.out.print("Loai dat (A/B/C)");
+		loaiDat = scanner.nextLine();
+		while (loaiDat != "A" && loaiDat != "B" && loaiDat != "C") {
+			System.out.println("Loai dat phai la mot trong 3 loai A/B/C. /nNhap lai loai dat: ");
+			loaiDat = scanner.nextLine();
+		}
+	}
+	
+	public void xuatGDDat() {
+		super.xuat();
+		System.out.println("Loai dat: " + loaiDat);
+	}
+	
+	public void thanhTienGDDat() {
+		switch (loaiDat) {
+		case "A":
+			setThanhTien(getDienTich() * getDonGia() * 1.5);
+			break;
+		case "B":
+		case "C":
+			setThanhTien(getDienTich() * getDonGia());
+			break;
+		default:
+			break;
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+
+}

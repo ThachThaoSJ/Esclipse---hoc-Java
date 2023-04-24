@@ -1,0 +1,34 @@
+package Inheritance_baitap;
+
+public class SachGiaoKhoa extends Sach {
+	public String tinhTrang;
+	
+	
+	public void nhapThongTinSGK() {
+		super.nhapThongTinSach();
+		System.out.print("Tinh trang sach (moi/cu): ");
+		tinhTrang = scanner.nextLine();
+	}
+	
+	public void xuatThongTinSGK() {
+		super.xuatThongTinSach();
+		System.out.print("Tinh trang sach: " + tinhTrang);
+	}
+	
+	public double thanhTienSGK() {
+		if (tinhTrang == "moi") {
+			thanhTien = super.thanhTien();
+		} else {
+			thanhTien = super.thanhTien()*0.5;
+		}
+		return thanhTien;
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

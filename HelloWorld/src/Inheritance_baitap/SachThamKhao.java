@@ -1,0 +1,29 @@
+package Inheritance_baitap;
+
+import java.util.Scanner;
+
+public class SachThamKhao extends Sach {
+	public double thue;
+	
+	Scanner scanner = new Scanner(System.in);
+	public void nhapThongTinSTK() {
+		super.nhapThongTinSach();
+		System.out.print("Thue: ");
+		thue = scanner.nextDouble();
+	}
+	
+	public void xuatThongTinSTK() {
+		super.xuatThongTinSach();
+		System.out.println("Thue: " + thue);
+	}
+	
+	public double thanhTienSTK() {
+		return super.thanhTien() + thue;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

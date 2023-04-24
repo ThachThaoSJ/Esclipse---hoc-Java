@@ -1,0 +1,31 @@
+package Inheritance_baitap;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class QuanLyChuyenXe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		ChuyenXeNoiThanh xeNoiThanh = new ChuyenXeNoiThanh();
+		ChuyenXeNgoaiThanh xeNgoaiThanh = new ChuyenXeNgoaiThanh();
+		
+		ArrayList<ChuyenXeNoiThanh> CXNoiThanh = new ArrayList<>();
+		ArrayList<ChuyenXeNgoaiThanh> CXNgoaiThanh = new ArrayList<>();
+		
+		//nhap thong tin chuyen xe noi thanh
+		System.out.print("Nhap so chuyen xe noi thanh: ");
+		int soChuyenNoiThanh = scanner.nextInt();
+		
+		for (int i = 0; i < soChuyenNoiThanh; i++) {
+			System.out.println("Nhap thong tin chuyen xe noi thanh thu " + (i + 1) + ": ");
+			xeNoiThanh.nhapThongTinChuyenXeNoiThanh();
+			CXNoiThanh.add(xeNoiThanh);
+			System.out.println();
+		}
+		
+
+	}
+
+}

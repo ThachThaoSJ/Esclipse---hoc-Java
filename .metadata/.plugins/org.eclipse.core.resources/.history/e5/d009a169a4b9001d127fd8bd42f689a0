@@ -1,0 +1,10 @@
+package cautrucwhile;
+
+public class TinhTongBinhPhuong {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package Inheritance_baitap;
+
+public class SachThamKhao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

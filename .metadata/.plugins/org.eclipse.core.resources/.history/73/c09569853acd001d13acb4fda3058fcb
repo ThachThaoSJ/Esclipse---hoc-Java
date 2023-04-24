@@ -1,0 +1,10 @@
+package Inheritance_baitap;
+
+public class QuanLyGiaoDichNhaDat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

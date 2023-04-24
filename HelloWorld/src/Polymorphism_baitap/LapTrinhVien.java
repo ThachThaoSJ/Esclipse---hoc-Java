@@ -1,0 +1,20 @@
+package Polymorphism_baitap;
+
+public class LapTrinhVien extends NhanVienCongTyPhanMem{
+	private float soGioOT;
+	
+	public void nhapThongTin() {
+		super.nhapThongTin();
+		System.out.print("Nhap so gio OT: ");
+		soGioOT = scanner.nextFloat();
+	}
+	
+	public String xuatThongTin() {
+		return "Vi tri: " + getViTri() + ", " + super.xuatThongTin() + "so gio OT: " + soGioOT + ", tong luong: " + tinhLuong();
+	}
+	
+	public float tinhLuong() {
+		return getLuongCoBan() + soGioOT * 200000;
+	}
+
+}

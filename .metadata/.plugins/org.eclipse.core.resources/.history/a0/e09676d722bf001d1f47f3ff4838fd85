@@ -1,0 +1,32 @@
+package ChuoiString;
+
+import java.util.Scanner;
+
+public class ChuoiPanlyndrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		
+		//nhap chuoi:
+		System.out.println("Nhap vao chuoi:");
+		String chuoi = scanner.nextLine();
+		char kyTu;
+		
+		for (int i = 0; i < chuoi.length(); i++) {
+			kyTu = chuoi.charAt(chuoi.length() - i - 1);
+            
+	        // kiểm tra ký tự tại vị trí i 
+	        // có giống với ký tự tại vị trí (chuoi.length() - i - 1) hay không
+	        if (chuoi.charAt(i) == kyTu) {
+	            System.out.println("Chuỗi này là chuỗi Panlyndrome.");
+	            break;
+	        } else {
+	            System.out.println("Chuỗi này không là chuỗi Panlyndrome.");
+	            break;
+	        }
+		}
+
+	}
+
+}

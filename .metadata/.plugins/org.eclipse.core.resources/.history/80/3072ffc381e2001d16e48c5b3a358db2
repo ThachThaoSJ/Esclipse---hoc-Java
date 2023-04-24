@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+/**
+ * @author thaont2339
+ *
+ */
+module HelloWorld {
+	requires org.seleniumhq.selenium.grid;
+	requires selenium.server.standalone;
+}

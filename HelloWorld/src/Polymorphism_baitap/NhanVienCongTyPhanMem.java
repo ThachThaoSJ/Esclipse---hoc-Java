@@ -1,0 +1,52 @@
+package Polymorphism_baitap;
+
+import java.util.Scanner;
+
+public class NhanVienCongTyPhanMem {
+	private String maNV, hoTen, sdt, email, viTri;
+	private int tuoi;
+	private float luongCoBan;
+	Scanner scanner = new Scanner(System.in);
+	
+	public void nhapThongTin() {
+		System.out.print("Nhap ma nhan vien: ");
+		maNV = scanner.nextLine();
+		System.out.print("Nhap ho ten nhan vien: ");
+		hoTen = scanner.nextLine();
+		System.out.print("Nhap tuoi: ");
+		tuoi = Integer.parseInt(scanner.nextLine());
+		System.out.print("Nhap so dien thoai: ");
+		sdt = scanner.nextLine();
+		System.out.print("Nhap email: ");
+		email = scanner.nextLine();
+		System.out.print("Nhap luong co ban: ");
+		setLuongCoBan(scanner.nextFloat());
+	}
+	
+	public String xuatThongTin() {
+		return "ma nhan vien: " + maNV + ", ho ten: " + hoTen + ", tuoi: " + tuoi + ", so dien thoai: " + sdt + ", email: " + email + ", luong co ban: " + getLuongCoBan() + ", ";
+	}
+	
+	public float tinhLuong() {
+		return 0;
+	}
+
+	public float getLuongCoBan() {
+		return luongCoBan;
+	}
+
+	public void setLuongCoBan(float luongCoBan) {
+		this.luongCoBan = luongCoBan;
+	}
+
+	public String getViTri() {
+		return viTri;
+	}
+
+	public void setViTri(String viTri) {
+		this.viTri = viTri;
+	}
+	
+	
+
+}

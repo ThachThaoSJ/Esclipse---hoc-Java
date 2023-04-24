@@ -1,0 +1,59 @@
+package Inheritance_baitap;
+
+import java.util.Scanner;
+
+public class GiaoDichNhaDat {
+	private String maGD, ngayGD;
+	private float donGia, dienTich;
+	private double thanhTien;
+	Scanner scanner = new Scanner(System.in);
+	
+	public void nhap() {
+		System.out.print("Ma giao dich: ");
+		maGD = scanner.nextLine();
+		System.out.print("Ngay giao dich: ");
+		ngayGD = scanner.nextLine();
+		System.out.print("Don gia: ");
+		setDonGia(scanner.nextFloat());
+		System.out.print("Dien tich: ");
+		setDienTich(scanner.nextFloat());
+	}
+	
+	public double getThanhTien() {
+		return thanhTien;
+	}
+
+	public void setThanhTien(double d) {
+		this.thanhTien = d;
+	}
+
+	public void xuat() {
+		System.out.print("Ma giao dich: " + maGD);
+		System.out.print("Ngay giao dich: " + ngayGD);
+		System.out.print("Don gia: " + getDonGia());
+		System.out.print("Dien tich: " + getDienTich());
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public float getDienTich() {
+		return dienTich;
+	}
+
+	public void setDienTich(float dienTich) {
+		this.dienTich = dienTich;
+	}
+
+	public float getDonGia() {
+		return donGia;
+	}
+
+	public void setDonGia(float donGia) {
+		this.donGia = donGia;
+	}
+
+}

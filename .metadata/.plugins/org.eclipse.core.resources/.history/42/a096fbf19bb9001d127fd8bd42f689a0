@@ -1,0 +1,25 @@
+package cautrucwhile;
+
+import java.util.Scanner;
+
+public class UCLNvaBCNN {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int a,b;
+		System.out.println("Nhap vao so nguyen duong thu nhat");
+		a = scanner.nextInt();
+		System.out.println("Nhap vao so nguyen duong thu hai");
+		b = scanner.nextInt();
+		int uoc = 1, UCLN, BCNN;
+		
+		if (a > b) {
+			while (uoc <= b) {
+				
+			}
+		}
+
+	}
+
+}

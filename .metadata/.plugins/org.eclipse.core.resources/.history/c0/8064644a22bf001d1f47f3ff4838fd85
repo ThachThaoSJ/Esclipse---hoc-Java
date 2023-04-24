@@ -1,0 +1,26 @@
+package ChuoiString;
+
+import java.util.Scanner;
+
+public class ChuoiPanlyndrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		
+		//nhap chuoi:
+		System.out.println("Nhap vao chuoi:");
+		String chuoi = scanner.nextLine();
+		char kyTu;
+		
+		for (int i = 0; i < chuoi.length(); i++) {
+			kyTu = chuoi.charAt(i);
+			if (kyTu != chuoi.charAt(chuoi.length() - i)) {
+				System.out.println("Day khong phai chuoi Panlyndrome");
+				break;
+			}
+		}
+
+	}
+
+}

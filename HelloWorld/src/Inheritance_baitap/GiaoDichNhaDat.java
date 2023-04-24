@@ -1,0 +1,68 @@
+package Inheritance_baitap;
+
+import java.util.Scanner;
+
+public class GiaoDichNhaDat {
+	private String maGD, ngayGD;
+	private float donGia, dienTich;
+	private double thanhTien;
+	public String getNgayGD() {
+		return ngayGD;
+	}
+
+	public void setNgayGD(String ngayGD) {
+		this.ngayGD = ngayGD;
+	}
+
+	Scanner scanner = new Scanner(System.in);
+	
+	public void nhap() {
+		System.out.print("Ma giao dich: ");
+		maGD = scanner.nextLine();
+		System.out.print("Ngay giao dich: ");
+		ngayGD = scanner.nextLine();
+		System.out.print("Don gia: ");
+		setDonGia(Float.parseFloat(scanner.nextLine()));
+		System.out.print("Dien tich: ");
+		setDienTich(Float.parseFloat(scanner.nextLine()));
+//		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+	}
+	
+	public double getThanhTien() {
+		return thanhTien;
+	}
+
+	public void setThanhTien(double d) {
+		this.thanhTien = d;
+	}
+
+	public void xuat() {
+		System.out.println("Ma giao dich: " + maGD);
+		System.out.println("Ngay giao dich: " + ngayGD);
+		System.out.println("Don gia: " + getDonGia());
+		System.out.println("Dien tich: " + getDienTich());
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public float getDienTich() {
+		return dienTich;
+	}
+
+	public void setDienTich(float dienTich) {
+		this.dienTich = dienTich;
+	}
+
+	public float getDonGia() {
+		return donGia;
+	}
+
+	public void setDonGia(float donGia) {
+		this.donGia = donGia;
+	}
+
+}

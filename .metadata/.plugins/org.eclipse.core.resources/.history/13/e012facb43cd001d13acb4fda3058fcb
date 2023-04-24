@@ -1,0 +1,39 @@
+package Inheritance_baitap;
+
+public class GiaoDichNha extends GiaoDichNhaDat{
+	public String loaiNha, diaChi;
+	
+	public void nhapGDNha() {
+		super.nhap();
+		System.out.print("Loai nha (cao cap/thuong)");
+		loaiNha = scanner.nextLine();
+		while (loaiNha != "cao cap" && loaiNha != "thuong") {
+			System.out.println("Loai nha phai la mot trong 2 loai cao cap/thuong. /nNhap lai loai nha: ");
+			loaiNha = scanner.nextLine();
+		}
+	}
+	
+	public void xuatGDNha() {
+		super.xuat();
+		System.out.println("Loai nha: " + loaiNha);
+	}
+	
+	public void thanhTienGDNha() {
+		switch(loaiNha) {
+		case "cao cap":
+			setThanhTien(getDienTich()*getDonGia());
+			break;
+		case "thuong":
+			setThanhTien(getDienTich()*getDonGia() * 0.9);
+			break;
+		default:
+			break;
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

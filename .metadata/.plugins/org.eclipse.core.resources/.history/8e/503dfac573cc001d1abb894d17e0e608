@@ -1,0 +1,33 @@
+package Inheritance_baitap;
+
+import java.util.Scanner;
+
+public class GiaoDichNhaDat {
+	private String maGD, ngayGD;
+	private float donGia, dienTich,thanhTien;
+	Scanner scanner = new Scanner(System.in);
+	
+	public void nhap() {
+		System.out.print("Ma giao dich: ");
+		maGD = scanner.nextLine();
+		System.out.print("Ngay giao dich: ");
+		ngayGD = scanner.nextLine();
+		System.out.print("Don gia: ");
+		donGia = scanner.nextFloat();
+		System.out.print("Dien tich: ");
+		dienTich = scanner.nextFloat();
+	}
+	
+	public void xuat() {
+		System.out.print("Ma giao dich: " + maGD);
+		System.out.print("Ngay giao dich: " + ngayGD);
+		System.out.print("Don gia: " + donGia);
+		System.out.print("Dien tich: " + dienTich);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
